@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
 
 }
 
-class Students(/*property*/var name:String, var english: Int, var math: Int) {
+class Students(/*property*/private var name:String, private var english: Int, private var math: Int) {
 //    新增屬性，可跟建構子同時設計
     fun print() {
         println(name + "\t" + english + "\t" + math +
