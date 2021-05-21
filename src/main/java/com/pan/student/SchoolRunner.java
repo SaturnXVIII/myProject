@@ -8,7 +8,11 @@ public class SchoolRunner {
   gradle.property=>
   https://stackoverflow.com/questions/21267234/show-utf-8-text-properly-in-gradle/21267635#21267635*/
     public static void main(String[] args) {
-//        ctrl + P: 建議的建構子
+//        userInput();
+    }
+// 抽取出成為方法：ctrl + alt + M
+    private static void userInput() {
+        //        ctrl + P: 建議的建構子
         System.out.print("please enter student's name: ");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.next();
@@ -21,5 +25,6 @@ public class SchoolRunner {
 //        create constructor: alt + shift + enter
         Student stu = new Student(name, english, math);
         stu.print();
+        System.out.println("High score: " + stu.hightest());
     }
 }

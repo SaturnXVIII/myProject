@@ -25,4 +25,19 @@ public class Student {
     public void print() {
         System.out.println(name +  "\t english score = " + english + "\t math score = " + math);
     }
+
+//    16
+//    成績回傳
+    public int hightest() {
+        /*
+        int max = (english > math) ? english : math; //三元運算式
+
+        if (english > math) {
+            max = english;
+        }else {
+            max = math;
+        }
+        */
+        return (english > math) ? english : math;
+    }
 }
