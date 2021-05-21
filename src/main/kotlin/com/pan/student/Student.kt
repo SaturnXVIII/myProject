@@ -1,8 +1,18 @@
 package com.pan.student
 
+import java.util.*
+
 //top -level
 fun main(args: Array<String>) {
-    var stu = Students( "Jack", 66 , 88 )
+//    in在kotlin中是關鍵字，加上重音符號即可使用關鍵字
+    val scanner = Scanner(System.`in`)
+    print("Please enter student's name: ")
+    val name = scanner.next()
+    print("Please enter student's english score: ")
+    val english = scanner.nextInt()
+    print("Please enter student's math score: ")
+    val math = scanner.nextInt()
+    val stu = Students( name, english , math )
     stu.print()
 
 }
